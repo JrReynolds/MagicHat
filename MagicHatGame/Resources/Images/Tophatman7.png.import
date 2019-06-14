@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tophatman.png-cee6bd33da21105f0ccafeef48d028ac.stex"
+path="res://.import/Tophatman7.png-6783e3eadf6ad6c9db7346339710adb5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tophatman.png"
-dest_files=[ "res://.import/Tophatman.png-cee6bd33da21105f0ccafeef48d028ac.stex" ]
+source_file="res://Resources/Images/Tophatman7.png"
+dest_files=[ "res://.import/Tophatman7.png-6783e3eadf6ad6c9db7346339710adb5.stex" ]
 
 [params]
 
