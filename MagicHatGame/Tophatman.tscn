@@ -1,0 +1,58 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://Tophatman9.png" type="Texture" id=2]
+[ext_resource path="res://Tophatman10.png" type="Texture" id=3]
+[ext_resource path="res://Tophatman4.png" type="Texture" id=4]
+[ext_resource path="res://Tophatman5.png" type="Texture" id=5]
+[ext_resource path="res://Tophatman6.png" type="Texture" id=6]
+[ext_resource path="res://Tophatman7.png" type="Texture" id=7]
+[ext_resource path="res://Tophatman8.png" type="Texture" id=8]
+[ext_resource path="res://Tophatman1.png" type="Texture" id=9]
+[ext_resource path="res://Tophatman2.png" type="Texture" id=10]
+[ext_resource path="res://Tophatman3.png" type="Texture" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "down",
+"speed": 5.0
+} ]
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( 6.4427, -19.057 )
+
+[node name="Player" type="Node2D"]
+
+[node name="Player" type="Area2D" parent="."]
+position = Vector2( 93.5012, 31.7063 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
+frames = SubResource( 1 )
+animation = "down"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2( -8.73541, 2.26474 )
+shape = SubResource( 2 )
